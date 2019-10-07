@@ -18,8 +18,23 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+
+main.container {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+ }
+
+ /*
+It should be only 90% of the width of its parent element
+It should be center aligned to the body
+It should have the same colour background as the <body> element
  */
