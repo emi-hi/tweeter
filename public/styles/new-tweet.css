@@ -15,11 +15,9 @@ textarea {
 }
 
 .counter {
-  float: right
-  
+  float: right;
+  font-family: 'Bungee', cursive;
 }
-
-
 
 input {
   color:#FFFFFF;
