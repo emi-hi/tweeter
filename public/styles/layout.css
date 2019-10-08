@@ -29,5 +29,7 @@ main.container {
   width: 90%;
   padding-left: 5%;
   padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
   /* text-align: left; */
  }
