@@ -19,19 +19,17 @@ textarea {
 .counter {
   float: right;
   font-family: 'Bungee', cursive;
-  color: #3d3b3b
-  
+  color: #3d3b3b;
 }
 
-.negativeValue {
+.negative-value {
   color: #FF0000;
 }
-
 
 input {
   color:#FFFFFF;
   background:  #4056A1;
   font-family: 'Bungee', cursive;
-  justify-content: space-between
+  justify-content: space-between;
 };
 

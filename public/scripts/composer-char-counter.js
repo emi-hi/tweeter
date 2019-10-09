@@ -1,12 +1,15 @@
 $(document).ready(() => {
   const inputTweet = document.getElementById('tweetInput');
+  const maxTweetLength = 140;
+  const negativeValue = "negative-value"
   $(inputTweet).keyup(function () {
-    const countLength = 140 - this.value.length;
-    $(counter).text(countLength)
+    const countLength = maxTweetLength - this.value.length;
+    //look into siblings
+    $(counter).text(countLength);
     if (countLength < 0) {
-       $(counter).addClass("negativeValue");
+       $(counter).addClass(negativeValue);
     } else {
-      $(counter).removeClass("negativeValue");
+      $(counter).removeClass(negativeValue);
     }
   })
 })
