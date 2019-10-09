@@ -7,14 +7,14 @@ body > header {
   z-index: 0;
 }
 
-body > header > img {
+body > header > div > img {
   margin-left: auto;
   margin-right: auto;
   position: relative;
   display: block;
 
 }
-body > header > h2 {
+body > header > div > h2 {
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
 }

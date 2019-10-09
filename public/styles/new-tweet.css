@@ -1,6 +1,7 @@
 main.container.new-tweet {
   margin-left: auto;
   margin-right: auto;
+  color:  #3d3b3b
 }
 
 textarea {
@@ -10,12 +11,15 @@ textarea {
   border: 0;
   outline: 0;
   background: transparent;
-  border-bottom: 3px solid slategray;
+  border-bottom: 3px solid #3d3b3b;
+  font-weight: bold;
+  color:  #3d3b3b
 }
 
 .counter {
   float: right;
   font-family: 'Bungee', cursive;
+  color: #3d3b3b
   
 }
 
@@ -30,3 +34,4 @@ input {
   font-family: 'Bungee', cursive;
   justify-content: space-between
 };
+

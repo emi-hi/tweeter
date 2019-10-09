@@ -1,0 +1,43 @@
+article {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 3.5px solid #3d3b3b;
+  margin-top: 30px;
+  color:  #f4f1ec;
+}
+
+article > header {
+  height: 80px;
+  padding-bottom: 1.5em;
+}
+
+article > header > img {
+  align-self: left;
+  border-width: 2;
+}
+
+article > header > h4 {
+  float: right;
+}
+
+article > div {
+  font-size: small;
+  border-top: 2px solid #3d3b3b;
+  color: #3d3d3d
+  
+}
+article > div > p >  a {
+  float: right;
+  color: #3d3d3d
+}
+
+article > p {
+  color: #3d3d3d
+}
+
+.mouseOn {
+  box-shadow: 5px 5px 0 lightsteelblue;
+  color: lightsteelblue
+}
