@@ -1,4 +1,5 @@
 body > header {
+  padding-top: 120px;
   color:#FFFFFF;
   background-color: #D8ADB7;
   background-image: url("https://www.transparenttextures.com/patterns/black-thread.png");
@@ -6,15 +7,15 @@ body > header {
   width: 100%;
   z-index: 0;
 }
-
-body > header > div > img {
+body > header img {
+  margin-top:5px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  display: block;
-
+  width: 175px;
 }
-body > header > div > h2 {
+body > header h2 {
   text-align: center;
+  margin-top: -2px;
   font-family: "Source Sans Pro", sans-serif;
 }
