@@ -4,12 +4,11 @@ $(document).ready(() => {
   const negativeValue = "negative-value"
   $(inputTweet).keyup(function () {
     const countLength = maxTweetLength - this.value.length;
-    //look into siblings
-    $(counter).text(countLength);
+    theCounter = $(this).siblings("span.counter").text(countLength)
     if (countLength < 0) {
-       $(counter).addClass(negativeValue);
+      theCounter.addClass(negativeValue);
     } else {
-      $(counter).removeClass(negativeValue);
+      theCounter.removeClass(negativeValue);
     }
   })
 })
