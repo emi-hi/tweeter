@@ -52,13 +52,17 @@ $(document).ready(() => {
   $(button).on('click', function () {
     event.preventDefault()
     const $inputSerialize = $( this.form ).serialize()
-
+    const theInput = $('textArea#tweetInput').val()
+    if( theInput === '' | theInput === null){
+      alert("Please enter a tweet!")
+    } else if (theInput.length > 140) {
+      alert("please shorten your tweet, the max is 140 characters!")
+    } else {
       $.ajax({url: '/tweets', type: 'POST', data: $inputSerialize})
         // .then(loadTweets()))
     }
-
   });
-
+  
 });
 
 
