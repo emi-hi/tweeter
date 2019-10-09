@@ -51,18 +51,19 @@ $(document).ready(() => {
   const button = document.getElementById('submitTweet');
   $(button).on('click', function () {
     event.preventDefault()
+    const tweetLimit = 140;
     const $inputSerialize = $( this.form ).serialize()
     const theInput = $('textArea#tweetInput').val()
     if( theInput === '' | theInput === null){
       alert("Please enter a tweet!")
-    } else if (theInput.length > 140) {
+    } else if (theInput.length > tweetLimit) {
       alert("please shorten your tweet, the max is 140 characters!")
     } else {
       $.ajax({url: '/tweets', type: 'POST', data: $inputSerialize})
-        // .then(loadTweets()))
+      .then($(this.form).trigger("reset"));
     }
   });
-  
+
 });
 
 
