@@ -1,4 +1,4 @@
-header {
+body > header {
   color:#FFFFFF;
   background-color: #D8ADB7;
   background-image: url("https://www.transparenttextures.com/patterns/black-thread.png");
@@ -7,14 +7,14 @@ header {
   z-index: 0;
 }
 
-img {
+body > header > img {
   margin-left: auto;
   margin-right: auto;
   position: relative;
   display: block;
 
 }
-h2 {
+body > header > h2 {
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
 }
