@@ -62,9 +62,9 @@ $(document).ready(() => {
     const tweetLimit = 140;
      //if the tweet is too short or long, reject and send an alert to the user
     if ( theInput === '' | theInput === null){
-      return("Please enter a tweet!")
+      return("Error: ⚠️ Please enter a tweet! ⚠️")
     } else if (theInput.length > tweetLimit) {
-      return("please shorten your tweet, the max is 140 characters!")
+      return("Error: ⚠️ please shorten your tweet, the max is 140 characters!  ⚠️")
     } else {
       return true
     }
@@ -73,21 +73,29 @@ $(document).ready(() => {
   // when the button is clicked, check the text input and if it's good, send it to the server! then reset the form and load tweets.
   $(".form-inline").on('submit', function () {
     event.preventDefault()
+    
     const $form = $(this);
     const $input = $form.find("textarea");
     const $inputSerialize = $form.serialize();
-    if (isTweetValid($input.val()) === true) {
-      $.ajax({url: '/tweets', type: 'POST', data: $inputSerialize})
-        .then((res) => {
-          $form.trigger("reset");
-          $(this).siblings("span.counter").text(140);
-          (loadTweets())
-        })
-    } else {
-      $alert = $form.find("div.alert")
-      $alert.text(isTweetValid($input.val()));
-      $alert.addClass('is-hidden')//(isTweetValid($input.val()));
-    }
+    $alert = $form.find("div.alert")
+    $alert.text('')
+    // $alert.removeClass('is-visible')
+    $alert.slideDown()
+    setTimeout(() => {
+      if (isTweetValid($input.val()) === true) {
+        $.ajax({url: '/tweets', type: 'POST', data: $inputSerialize})
+          .then((res) => {
+            $form.trigger("reset");
+            $(this).siblings("span.counter").text(140);
+            (loadTweets())
+          })
+      } else {
+        $alert.text(isTweetValid($input.val()));
+        $alert.slideDown()
+        // $alert.addClass('is-visible')//(isTweetValid($input.val()));
+      }
+    }, 200);
+ 
   });
 
 
