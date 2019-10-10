@@ -56,6 +56,8 @@ $(document).ready(() => {
         renderTweets(moreTweets)
       })
   }
+
+
   const isTweetValid = function(theInput) {
     const tweetLimit = 140;
      //if the tweet is too short or long, reject and send an alert to the user
@@ -73,7 +75,6 @@ $(document).ready(() => {
     event.preventDefault()
     const $form = $(this);
     const $input = $form.find("textarea");
-    // const theInput = $input.val(); //switch this to this!
     const $inputSerialize = $form.serialize();
     if (isTweetValid($input.val()) === true) {
       $.ajax({url: '/tweets', type: 'POST', data: $inputSerialize})
@@ -87,9 +88,14 @@ $(document).ready(() => {
     }
   });
 
-  loadTweets()
-  
 
+  const extendNewTweetButton = document.getElementById("tweetArrow");
+  $(extendNewTweetButton).on('click', function () {
+    $("#new-tweet-form").slideToggle('slow')
+    $("#tweetInput").focus()
+  })
+
+  loadTweets()
 });
 
 
