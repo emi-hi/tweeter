@@ -2,6 +2,7 @@ article {
   padding: 10px;
   border: 3.5px solid #3d3b3b;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 article > header {
@@ -31,7 +32,6 @@ article > footer {
 }
 
 article > footer > p >  a {
-  
   float: right;
 }
 
@@ -41,7 +41,6 @@ article > p {
 
 article:hover {
   box-shadow: 5px 5px 0 lightsteelblue;
-  /* color: lightsteelblue; */
   font-weight: bold;
 }
 
