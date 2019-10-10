@@ -9,14 +9,28 @@ nav {
   padding: 1.5em;
 }
 
+
 nav span.tweet {
   font-family: 'Bungee', cursive;
   flex-direction: row;
   margin-top:auto;
   margin-bottom: auto;
 }
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-5px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
 
 nav div img {
+  padding-top: 2px;
+  animation: float 2s ease-in-out infinite;
   max-width: 40px;
 }
 #writeTweet {
