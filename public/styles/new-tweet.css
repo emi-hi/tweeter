@@ -5,15 +5,18 @@ main.container.new-tweet {
 }
 
 .alert {
-  visibility: hidden;
-  padding: 10px;
-  background-color: #f44336; /* Red */
+  font-size: smaller;
+  font-weight: bold;
+  /* position: 40px; */
+  /* visibility: hidden; */
+  background-color: salmon; /* Red */
   color: white;
-  margin-bottom: 15px;
+
 }
-.is-hidden {
+.is-visible {
   visibility: visible;
 }
+
 
 textarea {
   width: 100%;

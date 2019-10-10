@@ -1,20 +1,22 @@
 body > header {
-  padding-top: 120px;
   color:#FFFFFF;
-  background-color: #D8ADB7;
-  background-image: url("https://www.transparenttextures.com/patterns/black-thread.png");
+  background-color: #d98f99;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   height: 400px;
   width: 100%;
-  z-index: 0;
 }
-body > header img {
-  margin-top: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+header > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#top-header img {
   width: 175px;
 }
-body > header h2 {
+
+#top-header h2 {
   text-align: center;
   margin-top: 0px; 
   font-family: "Source Sans Pro", sans-serif;

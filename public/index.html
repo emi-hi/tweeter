@@ -24,7 +24,7 @@
   <body>
 
     <!-- Top nav bar (fixed) -->
-    <nav>
+    <nav id="top-nav">
       <span class='tweet'>tweeter</span>
       <div id="writeTweet">
         <span class="write"><b>write</b> a new tweet</span>
@@ -33,12 +33,9 @@
     </nav>
 
     <!-- header -->
-    <header>
+    <header id="top-header">
         <div>
             <img src="/images/profile-hex.png"> 
-        </div>
-        <br>
-        <div>
             <h2>Your Name</h2>
         </div>
     </header>
@@ -48,7 +45,7 @@
         <section class="new-tweet" id="new-tweet-form">
           <h2>Compose Tweet</h2>
           <form class="form-inline" action="/tweets" method="POST">
-            <div class="alert" id="alert">This is the alert!</div>   
+            <div class="alert" id="alert"></div>   
             <textarea name="text" id="tweetInput" placeholder="What are you humming about?"></textarea>
             <input id="submitTweet" type="submit" value="Tweet">
             <span class="counter" id="counter">140</span>
