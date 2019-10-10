@@ -4,6 +4,17 @@ main.container.new-tweet {
   color:  #3d3b3b
 }
 
+.alert {
+  visibility: hidden;
+  padding: 10px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+.is-hidden {
+  visibility: visible;
+}
+
 textarea {
   width: 100%;
   height: 70px;
@@ -32,3 +43,6 @@ input {
   font-family: 'Bungee', cursive;
   justify-content: space-between;
 };
+
+
+

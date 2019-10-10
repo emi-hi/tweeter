@@ -84,7 +84,9 @@ $(document).ready(() => {
           (loadTweets())
         })
     } else {
-      alert(isTweetValid($input.val()));
+      $alert = $form.find("div.alert")
+      $alert.text(isTweetValid($input.val()));
+      $alert.addClass('is-hidden')//(isTweetValid($input.val()));
     }
   });
 
