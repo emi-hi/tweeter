@@ -19,13 +19,12 @@ $(document).ready(() => {
         </header>
         <p>${escape(tweetObj.content.text)}</p>
         <footer>
-          
             ${timeDiff}
             <p> 
               <img id="flag-icon" src='/images/flag.png'>
               <img id="retweet" src='/images/retweet.png'>
               <img id="heart-icon" src='/images/love.png'>
-          </p>
+            </p>
         </footer>
       `
       return $tweet.append(markup);
@@ -82,12 +81,6 @@ $(document).ready(() => {
       }
     }, 600);
   });
-
-  //scroll to top when arrow clicked!
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
   
   loadTweets()
 });

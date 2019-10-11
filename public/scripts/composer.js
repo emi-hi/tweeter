@@ -27,7 +27,6 @@ $(document).ready(() => {
       $( "#up-chevron" ).css("visibility", "visible");
       $( "#tweetArrow" ).css("visibility", "hidden");
       $( "#writeTweet" ).css("visibility", "hidden");
-      $( "#new-tweet-form").css("display", "contents");
     } else {
       $( "#up-chevron" ).css("visibility", "hidden");
       $( "#tweetArrow" ).css("visibility", "visible");
@@ -39,6 +38,7 @@ $(document).ready(() => {
     //scroll to top when arrow clicked!
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    $("#new-tweet-form").slideToggle('slow');
     $("#tweetInput").focus();
   })
 
