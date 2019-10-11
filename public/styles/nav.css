@@ -16,11 +16,9 @@ nav span.tweet {
   margin-top:auto;
 }
 
-
-
 nav div img {
   animation: float 2s ease-in-out infinite;
-  max-width: 40px;
+  width: 40px;
   padding-top: 2px;
 }
 
@@ -40,6 +38,7 @@ nav div img:hover {
   cursor: pointer;
   position: relative; 
   top: 5px;
+  width: 45px;
 }
 
 @keyframes float {
