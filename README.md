@@ -22,10 +22,10 @@ Users just have to type a message into the "compose tweet" box, hit "TWEET", and
 ### main page on a large screen
 !["screenshot of main page on a large screen"](https://github.com/emi-hi/tweeter/blob/master/docs/mainLarge.png)
 
-### main page on a tablet sized screen
+### main page on a tablet sized screen--nav bar disappears and layout changes (header goes to top)
 !["screenshot of main page on a tablet sized screen"](https://github.com/emi-hi/tweeter/blob/master/docs/mainTablet.png)
 
-### main page on a phone sized screen
+### main page on a phone sized screen--some more layout changes to better fit a small screen
 !["screenshot of main page on a phone screen"](https://github.com/emi-hi/tweeter/blob/master/docs/mainPhone.png)
 
 ### if you scroll down, there will be an arrow in the bottom corner of your screen that will bring scroll all the way to the top! 
