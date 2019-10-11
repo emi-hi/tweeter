@@ -16,8 +16,8 @@ $(document).ready(() => {
   // extend new tweet form when arrow clicked
   const extendNewTweetButton = document.getElementById("tweetArrow");
   $(extendNewTweetButton).on('click', function () {
-    $("#new-tweet-form").slideToggle('slow')
-    $("#tweetInput").focus()
+    $("#new-tweet-form").slideToggle('slow');
+    $("#tweetInput").focus();
   })
 
   // When the user scrolls down 20px from the top of the document, show the button
@@ -27,6 +27,7 @@ $(document).ready(() => {
       $( "#up-chevron" ).css("visibility", "visible");
       $( "#tweetArrow" ).css("visibility", "hidden");
       $( "#writeTweet" ).css("visibility", "hidden");
+      $( "#new-tweet-form").css("display", "contents");
     } else {
       $( "#up-chevron" ).css("visibility", "hidden");
       $( "#tweetArrow" ).css("visibility", "visible");
@@ -39,4 +40,5 @@ $(document).ready(() => {
   function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    $("#tweetInput").focus();
   }
