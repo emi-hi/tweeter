@@ -1,4 +1,5 @@
 $(document).ready(() => {
+  //count characters while user is typing new tweet, update counter
   const inputTweet = document.getElementById('tweetInput');
   const maxTweetLength = 140;
   const negativeValue = "negative-value"
@@ -10,5 +11,37 @@ $(document).ready(() => {
     } else {
       theCounter.removeClass(negativeValue);
     }
+  }) 
+
+  // extend new tweet form when arrow clicked
+  const extendNewTweetButton = document.getElementById("tweetArrow");
+  $(extendNewTweetButton).on('click', function () {
+    $("#new-tweet-form").slideToggle('slow')
+    $("#tweetInput").focus()
   })
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 30) {
+      $( "#up-chevron" ).css("visibility", "visible");
+      $( "#tweetArrow" ).css("visibility", "hidden");
+      $( "#writeTweet" ).css("visibility", "hidden");
+    } else {
+      $( "#up-chevron" ).css("visibility", "hidden");
+      $( "#tweetArrow" ).css("visibility", "visible");
+      $( "#writeTweet" ).css("visibility", "visible");
+    }
+  }
+  //scroll to top when arrow clicked!
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
 })
+
+
+
+
+
