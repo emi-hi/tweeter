@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+Users just have to type a message into the "compose tweet" box, hit "TWEET", and their post will appear with a timestamp! Tweets must be at least 1 character long, and no more than 140!
 
 ## Getting Started
 
@@ -15,3 +15,18 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Body Parser
+- Chance
+- md5
+
+### main page on a large screen
+!["screenshot of main page on a large screen"](https://github.com/emi-hi/tweeter/blob/master/docs/mainLarge.png)
+
+### main page on a tablet sized screen
+!["screenshot of rmain page on a tablet sized screen"](https://github.com/emi-hi/tweeter/blob/master/docs/mainTablet.png)
+
+### main page on a phone sized screen
+!["screenshot of main page on a phone screen"](https://github.com/emi-hi/tweeter/blob/master/docs/mainPhone.png)
+
+### if you scroll down, there will be an arrow in the bottom corner of your screen that will bring scroll all the way to the top! 
+!["screenshot of bottom of screen"](https://github.com/emi-hi/tweeter/blob/master/docs/bottomPage.png)
