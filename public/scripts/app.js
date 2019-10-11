@@ -19,8 +19,12 @@ $(document).ready(() => {
         </header>
         <p>${escape(tweetObj.content.text)}</p>
         <footer>
-          <p> ${timeDiff}
-              <a>🚩🔁❤️</a>
+          
+            ${timeDiff}
+            <p> 
+              <img id="flag-icon" src='/images/flag.png'>
+              <img id="retweet" src='/images/retweet.png'>
+              <img id="heart-icon" src='/images/love.png'>
           </p>
         </footer>
       `

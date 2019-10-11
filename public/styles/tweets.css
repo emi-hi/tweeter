@@ -30,14 +30,14 @@ article > header > p {
 article > footer {
   font-size: small;
   border-top: 2px solid #3d3b3b;
-}
-
-article > footer > p >  a {
-  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 article > p {
-  color: #3d3d3d
+  color: #3d3d3d;
 }
 
 article:hover {
@@ -47,4 +47,13 @@ article:hover {
 
 article:hover h4 {
   color:lightsteelblue 
+}
+
+#heart-icon, #flag-icon, #retweet {
+  height: 20px;
+  
+}
+
+#heart-icon, #flag-icon, #retweet:hover {
+  cursor: pointer;
 }
