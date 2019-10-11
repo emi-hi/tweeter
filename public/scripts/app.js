@@ -38,7 +38,7 @@ $(document).ready(() => {
   const loadTweets = function() {
     $.ajax({url: '/tweets', type: 'GET'})
       .then(function(moreTweets) {
-        renderTweets(moreTweets)
+        renderTweets(moreTweets);
       })
   }
 
@@ -47,9 +47,9 @@ $(document).ready(() => {
     const tweetLimit = 140;
      //if the tweet is too short or long, reject and send an alert to the user
     if ( theInput === '' | theInput === null){
-      return("Error: ⚠️ Please enter a tweet! ⚠️")
+      return("Error: ⚠️ Please enter a tweet! ⚠️");
     } else if (theInput.length > tweetLimit) {
-      return("Error: ⚠️ please shorten your tweet, the max is 140 characters!  ⚠️")
+      return("Error: ⚠️ please shorten your tweet, the max is 140 characters!  ⚠️");
     } else {
       return true;
     }
@@ -63,25 +63,29 @@ $(document).ready(() => {
     const $inputSerialize = $form.serialize();
     $alert = $form.find("div.alert");
     $alert.text('');
-    $alert.slideDown()
+    $alert.slideDown();
     setTimeout(() => {
       if (isTweetValid($input.val()) === true) {
         $.ajax({url: '/tweets', type: 'POST', data: $inputSerialize})
           .then((res) => {
             $form.trigger("reset");
             $(this).siblings("span.counter").text(140);
-            (loadTweets())
+            (loadTweets());
           })
       } else {
         $alert.text(isTweetValid($input.val()));
-        $alert.slideDown()
+        $alert.slideDown();
       }
-    }, 200);
+    }, 600);
  
   });
 
 
-
+  //scroll to top when arrow clicked!
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
   
   loadTweets()
 });
