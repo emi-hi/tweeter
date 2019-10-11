@@ -3,7 +3,6 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap" rel="stylesheet">
@@ -18,17 +17,15 @@
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
-    
   </head>
-
   <body>
 
     <!-- Top nav bar (fixed) -->
     <nav id="top-nav">
       <span class='tweet'>tweeter</span>
       <div id="writeTweet">
-        <span class="write"><b>write</b> a new tweet</span>
-        <img id="tweetArrow" src="https://img.icons8.com/wired/64/000000/chevron-down.png">
+        <span class="write" id="writeTweet"><b>write a new tweet</b></span>
+        <img id="tweetArrow" src="images/chevrondown.png">
       </div>
     </nav>
 
@@ -49,14 +46,14 @@
             <textarea name="text" id="tweetInput" placeholder="What are you humming about?"></textarea>
             <input id="submitTweet" type="submit" value="Tweet">
             <span class="counter" id="counter">140</span>
-              
           </form>
-
         </section>
 
         <section id="tweets-container">
         </section>
+        <img id='up-chevron' src='images/chevron.png'>
     </main>
-    <script src="/scripts/composer-char-counter.js"></script>
+    <script src="/scripts/composer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
   </body>
 </html>

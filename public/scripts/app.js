@@ -69,7 +69,7 @@ $(document).ready(() => {
         $.ajax({url: '/tweets', type: 'POST', data: $inputSerialize})
           .then((res) => {
             $form.trigger("reset");
-            $(this).siblings("span.counter").text(140);
+            $form.children("span.counter").text(140);
             (loadTweets());
           })
       } else {
@@ -77,9 +77,7 @@ $(document).ready(() => {
         $alert.slideDown();
       }
     }, 600);
- 
   });
-
 
   //scroll to top when arrow clicked!
   function topFunction() {

@@ -34,11 +34,13 @@ $(document).ready(() => {
       $( "#writeTweet" ).css("visibility", "visible");
     }
   }
-})
 
-  //scroll to top when arrow clicked!
-  function topFunction() {
+  $('#up-chevron').on('click', function () {
+    //scroll to top when arrow clicked!
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     $("#tweetInput").focus();
-  }
+  })
+
+})
+
