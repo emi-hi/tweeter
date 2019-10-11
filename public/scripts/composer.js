@@ -11,14 +11,14 @@ $(document).ready(() => {
     } else {
       theCounter.removeClass(negativeValue);
     }
-  }) 
+  });
 
   // extend new tweet form when arrow clicked
   const extendNewTweetButton = document.getElementById("tweetArrow");
   $(extendNewTweetButton).on('click', function () {
     $("#new-tweet-form").slideToggle('slow');
     $("#tweetInput").focus();
-  })
+  });
 
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function() {scrollFunction()};
@@ -32,7 +32,7 @@ $(document).ready(() => {
       $( "#tweetArrow" ).css("visibility", "visible");
       $( "#writeTweet" ).css("visibility", "visible");
     }
-  }
+  };
 
   $('#up-chevron').on('click', function () {
     //scroll to top when arrow clicked!
@@ -40,7 +40,7 @@ $(document).ready(() => {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     $("#new-tweet-form").slideToggle('slow');
     $("#tweetInput").focus();
-  })
+  });
 
-})
+});
 
