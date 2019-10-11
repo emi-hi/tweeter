@@ -1,21 +1,47 @@
 nav {
-  color:#FFFFFF;
   background:  #4056A1;
+  color:#FFFFFF;
+  display: flex;
   height: 120px;
+  padding: 1.5em;
+  position: fixed;
   width: 100%;
   z-index: 100;
-  position: fixed;
-  display: flex;
-  padding: 1.5em;
 }
-
 
 nav span.tweet {
-  font-family: 'Bungee', cursive;
   flex-direction: row;
-  margin-top:auto;
+  font-family: 'Bungee', cursive;
   margin-bottom: auto;
+  margin-top:auto;
 }
+
+
+
+nav div img {
+  animation: float 2s ease-in-out infinite;
+  max-width: 40px;
+  padding-top: 2px;
+}
+
+#writeTweet {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+nav span.write {
+  flex-wrap: wrap-reverse;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+nav div img:hover {
+  cursor: pointer;
+  position: relative; 
+  top: 5px;
+}
+
 @keyframes float {
 	0% {
 		transform: translatey(0px);
@@ -27,27 +53,4 @@ nav span.tweet {
 		transform: translatey(0px);
 	}
 }
-
-nav div img {
-  padding-top: 2px;
-  animation: float 2s ease-in-out infinite;
-  max-width: 40px;
-}
-#writeTweet {
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-nav span.write {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-nav div img:hover {
-  position: relative; 
-  top: 5px;
-  cursor: pointer;
-}
-
 

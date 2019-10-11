@@ -1,15 +1,15 @@
 body > header {
-  color:#FFFFFF;
-  background-color: #d98f99;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  background-color: #ff9778;
+  color:#FFFFFF;
   height: 400px;
   width: 100%;
 }
 
 header > div {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 #top-header img {
@@ -17,7 +17,7 @@ header > div {
 }
 
 #top-header h2 {
-  text-align: center;
-  margin-top: 0px; 
   font-family: "Source Sans Pro", sans-serif;
+  margin-top: 0px; 
+  text-align: center;
 }

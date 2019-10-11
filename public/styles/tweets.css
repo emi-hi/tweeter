@@ -3,6 +3,7 @@ article {
   border: 3.5px solid #3d3b3b;
   margin-top: 30px;
   margin-bottom: 30px;
+  word-wrap: break-word;
 }
 
 article > header {
